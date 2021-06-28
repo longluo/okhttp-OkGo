@@ -25,8 +25,10 @@ package com.lzy.demo.utils;
  * ================================================
  */
 public class Urls {
+    // TODO: 2021/6/28 fix the url.
     public static final String SERVER = "http://server.jeasonlzy.com/OkHttpUtils/";
     //    public static final String SERVER = "http://192.168.1.121:8080/OkHttpUtils/";
+
     public static final String URL_METHOD = SERVER + "method";
     public static final String URL_CACHE = SERVER + "cache";
     public static final String URL_IMAGE = SERVER + "image";

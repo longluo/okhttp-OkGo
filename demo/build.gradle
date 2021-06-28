@@ -97,6 +97,6 @@ dependencies {
     implementation project(':okserver')
 
     implementation 'com.lzy.widget:ninegridview:0.2.1'
-    implementation 'com.lzy.widget:imagepicker:0.3.2'
-    implementation 'com.lzy.widget:view-core:0.2.1'
+    implementation 'com.lzy.widget:imagepicker:0.5.1'
+    implementation 'com.lzy.widget:view-core:0.2.3'
 }

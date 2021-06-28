@@ -97,7 +97,9 @@ public class DownloadListActivity extends BaseActivity {
         checkSDCardPermission();
     }
 
-    /** 检查SD卡权限 */
+    /**
+     * 检查SD卡权限
+     */
     protected void checkSDCardPermission() {
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, REQUEST_PERMISSION_STORAGE);
@@ -163,10 +165,14 @@ public class DownloadListActivity extends BaseActivity {
 
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-        @BindView(R.id.name) TextView name;
-        @BindView(R.id.priority) TextView priority;
-        @BindView(R.id.icon) ImageView icon;
-        @BindView(R.id.download) Button download;
+        @BindView(R.id.name)
+        TextView name;
+        @BindView(R.id.priority)
+        TextView priority;
+        @BindView(R.id.icon)
+        ImageView icon;
+        @BindView(R.id.download)
+        Button download;
 
         private ApkModel apk;
 

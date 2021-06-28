@@ -121,6 +121,7 @@ public class GApp extends Application {
     private class SafeTrustManager implements X509TrustManager {
         @Override
         public void checkClientTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+
         }
 
         @Override

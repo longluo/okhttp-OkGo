@@ -61,6 +61,7 @@ public class SimpleDownloadActivity extends BaseDetailActivity {
     @BindView(R.id.tvProgress) TextView tvProgress;
     @BindView(R.id.netSpeed) TextView tvNetSpeed;
     @BindView(R.id.pbProgress) NumberProgressBar pbProgress;
+
     private NumberFormat numberFormat;
 
     @Override
@@ -75,7 +76,9 @@ public class SimpleDownloadActivity extends BaseDetailActivity {
         checkSDCardPermission();
     }
 
-    /** 检查SD卡权限 */
+    /**
+     * 检查SD卡权限
+     */
     protected void checkSDCardPermission() {
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, REQUEST_PERMISSION_STORAGE);
